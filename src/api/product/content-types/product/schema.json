@@ -34,6 +34,18 @@
         "videos",
         "audios"
       ]
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "product_name"
+    },
+    "weight": {
+      "type": "decimal"
+    },
+    "category_product": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::category-product.category-product"
     }
   }
 }
